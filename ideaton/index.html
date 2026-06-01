@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가톨릭공유대학 AI 스마트 클래스 플랫폼</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- 1. MAIN HEADER (Catholic Shared University UI Clone) -->
+  <header class="main-header">
+    <div class="header-left">
+      <a href="#" class="logo-container">
+        <div class="logo-icon">CJ</div>
+        <div>
+          <div>가톨릭공유대학</div>
+          <div class="logo-sub">CATHOLIC METAVERSITY</div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="header-right">
+      <div class="icon-button-group">
+        <!-- Search icon -->
+        <button class="icon-btn" title="검색">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <!-- Shopping Bag -->
+        <button class="icon-btn" title="장바구니">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </button>
+        <!-- Bookmark -->
+        <button class="icon-btn" title="북마크">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+        </button>
+        <!-- Mail -->
+        <button class="icon-btn" title="쪽지">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </button>
+        <!-- Notification Bell with 26 Badge -->
+        <button class="icon-btn" title="알림">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          <span class="badge">26</span>
+        </button>
+      </div>
+
+      <!-- User Info -->
+      <div class="user-profile">
+        <div class="avatar">김</div>
+        <span class="user-name">학생 이름</span>
+        <span class="chevron-down">▼</span>
+      </div>
+      
+      <!-- Globe Language -->
+      <button class="icon-btn" title="언어 설정" style="margin-left: -5px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- 2. HERO COURSE BANNER -->
+  <section class="hero-banner">
+    <div class="hero-content">
+      <span class="category-tag">공학</span>
+      <h1 class="course-title">2026년 1학기 과목 예시</h1>
+      <div class="prof-info">
+        <div class="prof-avatar"></div>
+        <span class="prof-name">교수 이름</span>
+        <button class="syllabus-btn">강의계획서 보기 &gt;</button>
+      </div>
+    </div>
+    <div class="hero-robot-container">
+      <img src="./humanoid_robot.png" alt="과목 예시 일러스트" class="hero-robot-img">
+    </div>
+  </section>
+
+  <!-- 3. TAB MENU NAVIGATION -->
+  <nav class="tabs-navigation">
+    <button class="tab-link active">강의실</button>
+    <button class="tab-link">공지사항</button>
+    <button class="tab-link">자료</button>
+    <button class="tab-link">1:1 질의응답</button>
+    <button class="tab-link">활동</button>
+    <button class="tab-link">그룹</button>
+    <button class="tab-link">성적</button>
+  </nav>
+
+  <!-- 4. DYNAMIC VIEW CONTAINER -->
+  <main class="dashboard-container">
+    
+    <!-- MOCK WEEKS BAR (Common for video rooms) -->
+    <div class="week-bar" id="week-tabs">
+      <div class="week-item"><div class="week-title">1주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">2주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">3주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">4주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">5주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">6주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">7주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">8주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">9주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">10주</div><div class="week-status done">✓</div></div>
+      <div class="week-item active" id="week-11-tab"><div class="week-title">11주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">12주</div><div class="week-status done">✓</div></div>
+      <div class="week-item"><div class="week-title">13주</div><div class="week-status">0/0</div></div>
+      <div class="week-item"><div class="week-title">14주</div><div class="week-status">0/0</div></div>
+      <div class="week-item"><div class="week-title">15주</div><div class="week-status">0/0</div></div>
+    </div>
+
+    <!-- VIEW 1: PROFESSOR VIEW (AI Auto-Timestamping & One-Click Approval) -->
+    <section class="simulation-view-card active" id="view-professor">
+      <div class="content-grid">
+        
+        <!-- Left: Lecture Video Player Simulation -->
+        <div>
+          <div class="player-container">
+            <div class="player-header">
+              <span class="player-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                과목 예시 - 강의 업로드 및 분석
+              </span>
+              <span style="font-size:0.8rem; opacity:0.8;">[교수자 화면] 교수 이름 교수</span>
+            </div>
+            
+            <div class="player-screen">
+              <!-- AI Analyzing HUD Overlay -->
+              <div class="ai-analyzing-overlay">
+                <div class="overlay-title">
+                  <span class="overlay-spinner"></span>
+                  CUAI 실시간 분석 엔진 작동 중
+                </div>
+                <div style="font-size:0.7rem; color: #a78bfa; margin-top:2px;">
+                  • 오디오 분석: STT 가동 (Ko-BERT/Whisper v3)<br>
+                  • 화면 텍스트: OCR 탐지 (PaddleOCR)<br>
+                  • 핵심 소주제 매핑 알고리즘 활성
+                </div>
+              </div>
+              
+              <!-- Simulated video graphic canvas/image -->
+              <canvas id="prof-video-canvas" class="video-element-mock" width="640" height="360"></canvas>
+              <div class="video-overlay-effect"></div>
+            </div>
+            
+            <div class="video-controls">
+              <div class="control-text-info">
+                <div class="control-meta">11차시 : chapter 6 과목 예시에게 언어 처리를 시켜보자(1)</div>
+                <div class="control-title-main">5월 13일 1차시 (녹화본 자동분석)</div>
+              </div>
+              
+              <!-- Video timeline -->
+              <div class="progress-bar-container" id="prof-video-timeline">
+                <div class="progress-bar-fill" id="prof-timeline-fill" style="width: 100%;"></div>
+                <div class="progress-marker" id="prof-timeline-marker" style="left: 100%;"></div>
+                <div class="progress-timestamp-tag" id="prof-timeline-tag" style="left: 100%;">34:22</div>
+              </div>
+              
+              <div class="control-buttons-row">
+                <button class="btn-player-action" id="prof-play-btn">
+                  <!-- Pause icon, since video is finished/uploaded -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                </button>
+                <div style="font-size:0.8rem; font-family:'Outfit', sans-serif;">
+                  <span id="prof-current-time">34:22</span> / 34:22 (분석 완료)
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="background:white; border: 1px solid var(--border-light); border-radius: 8px; padding: 15px; margin-top: 15px; font-size:0.85rem; color:#4b5563;">
+            💡 <strong>교수자 업무 자동화 가이드:</strong> AI가 강의 영상 속 음성과 PPT 텍스트를 실시간 추적하여 아래와 같이 소주제 타임스탬프 초안을 완성했습니다. 잘못 매칭된 내용이 있다면 수정할 수 있으며, <strong>'일괄 승인 및 배포'</strong> 버튼을 클릭하면 즉시 공유대학 포털에 아카이빙됩니다.
+          </div>
+        </div>
+        
+        <!-- Right: AI Auto-Generation Control Center -->
+        <aside class="ai-sidebar">
+          <div class="ai-sidebar-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ai-purple);"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            CUAI 실시간 분석 센터
+            <span class="badge-ai">초자동화 인프라</span>
+          </div>
+          
+          <!-- STT Waveform -->
+          <div class="speech-waveform-box">
+            <div class="waveform-label">
+              <span>교수 음성 주파수 (STT)</span>
+              <span class="waveform-status">● 분석 완료</span>
+            </div>
+            <div class="waveform-bars">
+              <div class="wave-bar active"></div>
+              <div class="wave-bar active" style="animation-delay: 0.1s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.3s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.2s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.4s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.6s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.5s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.7s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.9s;"></div>
+              <div class="wave-bar active" style="animation-delay: 0.8s;"></div>
+              <div class="wave-bar active" style="animation-delay: 1.1s;"></div>
+              <div class="wave-bar active" style="animation-delay: 1.0s;"></div>
+            </div>
+          </div>
+          
+          <!-- Terminal logs -->
+          <div class="ocr-stt-terminal" id="ai-terminal-logs">
+            <div class="terminal-line"><span class="time">[00:00:03]</span> <span class="tag">[STT]</span> 강의 개시 감지: 반갑습니다 여러분.</div>
+            <div class="terminal-line"><span class="time">[00:08:15]</span> <span class="tag">[OCR]</span> PPT 검출: <span class="keyword">과목 예시의 정의</span></div>
+            <div class="terminal-line"><span class="time">[00:15:30]</span> <span class="tag">[STT]</span> 음성 검출: 오늘 핵심인 <span class="keyword">역전파 알고리즘</span> 설명하겠습니다.</div>
+            <div class="terminal-line"><span class="time">[00:20:10]</span> <span class="tag">[OCR]</span> 수식 탐지: Weight gradient descent backpropagation formula.</div>
+            <div class="terminal-line"><span class="time">[00:24:45]</span> <span class="tag">[STT]</span> 핵심어 검출: 로봇 언어 처리 자연어 인공지능.</div>
+            <div class="terminal-line"><span class="time">[00:32:10]</span> <span class="tag">[OCR]</span> PPT 검출: 요약 및 과제 안내.</div>
+            <div class="terminal-line"><span class="time">[00:34:22]</span> <span class="tag">[SYSTEM]</span> AI 타임스탬프 목차 초안 생성 완료. 승인 대기 중...</div>
+          </div>
+          
+          <!-- Timestamps Edit List -->
+          <div>
+            <div style="font-size:0.8rem; font-weight:600; color:var(--text-muted); margin-bottom:8px;">AI 추천 타임스탬프 목차 (수정 가능)</div>
+            <div class="timestamps-list" id="prof-timestamp-list">
+              <div class="timestamp-row">
+                <div class="timestamp-left">
+                  <span class="timestamp-badge">00:00</span>
+                  <input type="text" class="timestamp-concept" style="border:none; background:none; font-family:inherit; font-size:inherit; font-weight:inherit;" value="인트로 및 오늘 학습 목표" width="100%">
+                </div>
+                <button class="timestamp-edit-btn" title="편집">✏️</button>
+              </div>
+              
+              <div class="timestamp-row">
+                <div class="timestamp-left">
+                  <span class="timestamp-badge">08:15</span>
+                  <input type="text" class="timestamp-concept" style="border:none; background:none; font-family:inherit; font-size:inherit; font-weight:inherit;" value="과목 예시의 정의" width="100%">
+                </div>
+                <button class="timestamp-edit-btn" title="편집">✏️</button>
+              </div>
+              
+              <div class="timestamp-row">
+                <div class="timestamp-left">
+                  <span class="timestamp-badge">15:30</span>
+                  <input type="text" class="timestamp-concept" style="border:none; background:none; font-family:inherit; font-size:inherit; font-weight:inherit;" value="역전파 알고리즘의 개념" width="100%">
+                </div>
+                <button class="timestamp-edit-btn" title="편집">✏️</button>
+              </div>
+              
+              <div class="timestamp-row">
+                <div class="timestamp-left">
+                  <span class="timestamp-badge">24:45</span>
+                  <input type="text" class="timestamp-concept" style="border:none; background:none; font-family:inherit; font-size:inherit; font-weight:inherit;" value="로봇 언어 처리 모델" width="100%">
+                </div>
+                <button class="timestamp-edit-btn" title="편집">✏️</button>
+              </div>
+              
+              <div class="timestamp-row">
+                <div class="timestamp-left">
+                  <span class="timestamp-badge">32:10</span>
+                  <input type="text" class="timestamp-concept" style="border:none; background:none; font-family:inherit; font-size:inherit; font-weight:inherit;" value="실습 안내 및 요약" width="100%">
+                </div>
+                <button class="timestamp-edit-btn" title="편집">✏️</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Approval Action Area -->
+          <div class="approval-panel-box">
+            <div class="warning-status-card">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <div>
+                <strong>승인 대기중:</strong> 승인 시 공유대학 시맨틱 검색 색인화 및 Anti-Cheating 학습 퀴즈가 활성화됩니다.
+              </div>
+            </div>
+            
+            <button class="btn-glowing-approve" id="prof-approve-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>AI 생성 타임스탬프 원클릭 승인</span>
+            </button>
+          </div>
+        </aside>
+        
+      </div>
+    </section>
+
+    <!-- VIEW 2: STUDENT PORTAL SEMANTIC SEARCH -->
+    <section class="simulation-view-card" id="view-student-search">
+      <div class="search-portal-wrapper">
+        <h2 class="search-portal-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--primary-color);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          공유대학 지식 아카이브 시맨틱 통합 검색
+        </h2>
+        <p class="search-portal-subtitle">단순한 강의명 매칭을 넘어, 강의 영상의 특정 분/초(Timestamp)로 즉시 다이렉트 랜딩합니다.</p>
+        
+        <!-- Search Bar Input Group -->
+        <div class="search-input-group">
+          <input type="text" class="search-input" id="portal-search-bar" placeholder="배우고 싶은 개념을 입력하세요 (예: 역전파 알고리즘, 로봇 모션 컨트롤...)" value="역전파 알고리즘">
+          <button class="btn-search-trigger" id="portal-search-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            검색
+          </button>
+        </div>
+
+        <!-- AI Assistant Recommendation tag -->
+        <div class="search-ai-tip">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ai-purple);"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          <div class="search-ai-tip-text">
+            <span>추천 키워드</span> 
+            <a href="#" class="search-recommend-link" style="color:var(--ai-purple); font-weight:700; margin-right:10px;" onclick="setSearchValue('역전파 알고리즘')">#역전파 알고리즘</a>
+            <a href="#" class="search-recommend-link" style="color:var(--text-muted); margin-right:10px;" onclick="setSearchValue('과목 예시의 정의')">#과목 예시의 정의</a>
+            <a href="#" class="search-recommend-link" style="color:var(--text-muted);" onclick="setSearchValue('자연어 처리 언어모델')">#자연어 처리 언어모델</a>
+          </div>
+        </div>
+
+        <!-- Semantic Search Results -->
+        <div class="search-results-section" id="portal-search-results">
+          <!-- Results will be dynamically populated/highlighted in app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: STUDENT VIEW (Anti-Cheating Quiz & Video Player) -->
+    <section class="simulation-view-card" id="view-student-quiz">
+      <div class="content-grid">
+        
+        <!-- Left: Student Video Player -->
+        <div>
+          <div class="player-container">
+            <div class="player-header">
+              <span class="player-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                [가톨릭공유대학] 과목 예시 - 강의실 수강 중
+              </span>
+              <span style="font-size:0.8rem; opacity:0.8;" id="student-header-time">[학생 화면] 학생 이름</span>
+            </div>
+            
+            <div class="player-screen">
+              <!-- Interactive Video review popup next to player in branching -->
+              <div class="ai-analyzing-overlay" id="quiz-player-ai-tip" style="display:none; border-color:var(--ai-purple);">
+                <div class="overlay-title" style="color:#c084fc;">
+                  ✨ CUAI의 가이드
+                </div>
+                <div id="quiz-player-ai-text" style="font-size:0.75rem;">
+                  역전파 구간(15:30)에 도달하여 우측에 <strong>Anti-Cheating 개념 확인 퀴즈</strong>가 출제되었습니다.
+                </div>
+              </div>
+              
+              <!-- Student Video Canvas -->
+              <canvas id="student-video-canvas" class="video-element-mock" width="640" height="360"></canvas>
+              <div class="video-overlay-effect"></div>
+            </div>
+            
+            <div class="video-controls">
+              <div class="control-text-info">
+                <div class="control-meta">11차시 : chapter 6 과목 예시에게 언어 처리를 시켜보자(1)</div>
+                <div class="control-title-main" id="student-video-title">5월 13일 1차시 강의 수강</div>
+              </div>
+              
+              <!-- Student Timeline -->
+              <div class="progress-bar-container" id="student-video-timeline">
+                <div class="progress-bar-fill" id="student-timeline-fill" style="width: 45%;"></div>
+                <div class="progress-marker" id="student-timeline-marker" style="left: 45%;"></div>
+                <div class="progress-timestamp-tag" id="student-timeline-tag" style="left: 45%;">15:30</div>
+              </div>
+              
+              <div class="control-buttons-row">
+                <button class="btn-player-action" id="student-play-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+                <div style="font-size:0.8rem; font-family:'Outfit', sans-serif;">
+                  <span id="student-current-time">15:30</span> / 34:22
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Floating review Mode indicator next to player in branching -->
+          <div class="review-mode-indicator" id="review-bubble-indicator">
+            <div class="review-indicator-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+              AI 추천 적응형 복습 구간 학습 중 (Adaptive Reviewing)
+            </div>
+            <div class="review-indicator-desc">
+              학습자님이 퀴즈에서 오답을 기록하여, 해당 개념이 기술된 <strong>[과목 예시의 정의(08분 15초)]</strong> 복습 가이드 구간으로 즉시 자동 탐색되었습니다. 이 구간을 완료하면 다시 퀴즈를 풀 기회가 제공됩니다.
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Smart Active Quizzes Sidebar -->
+        <aside class="quiz-sidebar">
+          <div class="quiz-header-area">
+            <div class="quiz-main-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--primary-color);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              🔒 Quiz
+            </div>
+          </div>
+          
+          <div class="quiz-body-section">
+            
+            <!-- Question 1: Drag-and-drop Node Connection -->
+            <div class="quiz-question-box">
+              <div class="quiz-question-num">문제 1 (노드 연결형)</div>
+              <div class="quiz-question-text">오른쪽의 역전파 알고리즘 순서 단계를 올바른 머신러닝 개념 블록과 선으로 연결하세요. (드래그 또는 순서 매칭)</div>
+              
+              <!-- Canvas Connection Game -->
+              <div class="node-connector-container" id="node-game-area">
+                <canvas class="connector-canvas" id="node-canvas"></canvas>
+                
+                <!-- Left: Concepts -->
+                <div class="connector-column left" id="node-left-col">
+                  <div class="connector-node" data-id="loss" data-side="left">오차 계산 (Loss Calc)</div>
+                  <div class="connector-node" data-id="grad" data-side="left">기울기 계산 (Gradients)</div>
+                  <div class="connector-node" data-id="forward" data-side="left">입력값 전달 (Forward)</div>
+                  <div class="connector-node" data-id="update" data-side="left">가중치 수정 (Weights)</div>
+                </div>
+                
+                <!-- Right: Chronological Sequence Steps -->
+                <div class="connector-column right" id="node-right-col">
+                  <div class="connector-node" data-target="forward" data-side="right">1단계: 순전파 전달</div>
+                  <div class="connector-node" data-target="loss" data-side="right">2단계: 손실함수 측정</div>
+                  <div class="connector-node" data-target="grad" data-side="right">3단계: 편미분 기울기</div>
+                  <div class="connector-node" data-target="update" data-side="right">4단계: 매개변수 갱신</div>
+                </div>
+              </div>
+              <button class="connector-reset-btn" id="btn-reset-nodes">연결 초기화</button>
+            </div>
+            
+            <!-- Question 2: Captcha Image Select -->
+            <div class="quiz-question-box">
+              <div class="quiz-question-num">문제 2 (이미지 캡차형)</div>
+              <div class="quiz-question-text">다음 이미지 중 "인간의 신체적 특성을 모사한 과목 예시"에 해당하는 객체를 모두 선택하세요. (시각 판단 퀴즈)</div>
+              
+              <!-- 3x3 Captcha Grid -->
+              <div class="captcha-grid" id="captcha-grid">
+                <!-- Tiles will be rendered dynamically in app.js via SVG drawings -->
+              </div>
+            </div>
+            
+            <button class="btn-submit-quiz" id="btn-quiz-submit">개념 평가 답안 제출</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. ADAPTIVE BRANCHING POPUP (ALERT WINDOW) -->
+  <div class="adaptive-branching-popup" id="adaptive-branching-modal">
+    <div class="popup-header">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      오답 분석에 따른 AI 적응형 복습 안내
+    </div>
+    
+    <div class="popup-content">
+      학습자님은 <strong>'역전파 알고리즘의 4단계 순서'</strong> 또는 <strong>'과목 예시의 개념 판별'</strong> 평가에서 오답을 기록하였습니다.
+      <br><br>
+      개념의 완전한 학습과 이해를 돕기 위해, CUAI가 강의 데이터에서 오답 원인이 된 핵심 강의 지점으로 학습자를 안내합니다.
+    </div>
+    
+    <div class="popup-branch-box">
+      <div class="branch-info-left">
+        <span class="branch-topic">11주차 추천 복습 지점</span>
+        <span class="branch-time">⏱ 08분 15초 (과목 예시의 정의)</span>
+      </div>
+      <div class="branch-action-indicator">➜</div>
+    </div>
+    
+    <button class="btn-popup-confirm" id="btn-popup-confirm">추천 복습 구간으로 이동하여 재수강</button>
+  </div>
+
+  <footer class="bottom-tour-controller" id="bottom-tour-controller">
+    <div class="tour-header">
+      <div class="tour-title">
+        <span style="display:inline-block; width:10px; height:10px; background-color:var(--primary-color); border-radius:50%;"></span>
+        Ideathon 데모 시나리오 제어기
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="font-size:0.75rem; color:var(--text-muted);">가톨릭공유대학 AI 학습 통합인프라</div>
+        <button class="tour-toggle-btn" id="tour-toggle-btn">접기 ▴</button>
+      </div>
+    </div>
+    
+    <!-- Steps navigation -->
+    <div class="tour-nav-buttons">
+      <button class="tour-btn prof-mode active" onclick="activateStep(1)">
+        👨‍🏫 1. AI 타임스탬프 실시간 생성 &amp; 승인 (교수)
+      </button>
+      <button class="tour-btn" onclick="activateStep(2)">
+        🎓 2. 공유대학 아카이브 시맨틱 검색 (학생)
+      </button>
+      <button class="tour-btn" onclick="activateStep(3)">
+        🎓 3. Quiz (학생)
+      </button>
+      <button class="tour-btn" onclick="activateStep(4)">
+        🔄 4. 적응형 복습 피드백 루프 (적응형 브랜칭)
+      </button>
+      <button class="tour-btn" onclick="activateStep(5)">
+        🎓 5. Quiz 단독 보기
+      </button>
+    </div>
+    
+    <!-- Dynamic Explanation Text Box -->
+    <div class="tour-description-box" id="tour-explanation">
+      <strong>[1단계] 교수자 시점 (초자동화 행정):</strong> 교수가 영상을 업로드(또는 촬영 종료)하면, CUAI가 영상의 소리와 화면을 분석하여 타임라인별 소주제 목차를 생성합니다. 교수는 <strong>'승인'</strong> 버튼 하나만 눌러 공유대학 포털에 반영합니다.
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
